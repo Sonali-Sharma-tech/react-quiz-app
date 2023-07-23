@@ -1,10 +1,14 @@
 import React, { useEffect } from "react"
 import { Progress } from 'antd'
 
-export const ProgressBar = ({ length, current }) => {
+export const ProgressBar = ({ length, userAnswerList }) => {
+
+    useEffect(() => {
+        calculatePercent();
+    }, [userAnswerList])
     
     const calculatePercent = () => {
-        const percent = ((current / length) * 100).toFixed(0);
+        const percent = ((userAnswerList?.length / length) * 100).toFixed(0);
         return percent;
     }
     return <>
