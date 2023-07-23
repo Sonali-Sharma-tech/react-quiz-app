@@ -1,0 +1,43 @@
+{
+    "questions": [
+        {
+            "title": "How many Bits makes one Byte?",
+            "image": "",
+            "options": [
+                "4 bits",
+                "8 bits",
+                "16 bits",
+                "32 bits"
+            ],
+            "correctAnswers": [
+                "8 bits"
+            ]
+        },
+        {
+            "title": "Who is called Father of Computer?",
+            "image": "",
+            "options": [
+                "Charles Babbage",
+                "Blaise Pascal",
+                "Bill Gates",
+                "Mark Zuckerberg"
+            ],
+            "correctAnswers": [
+                "Charles Babbage"
+            ]
+        },
+        {
+            "title": "What does CPU stands for",
+            "image": "",
+            "options": [
+                "Central Processing Unit",
+                "Control Processing Unit",
+                "Computer Processing Unit",
+                "Computer Programming Unit"
+            ],
+            "correctAnswers": [
+                "Central Processing Unit"
+            ]
+        }
+    ]
+}
