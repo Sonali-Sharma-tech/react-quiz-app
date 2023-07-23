@@ -1,7 +1,7 @@
 {
     "questions": [
         {
-            "title": "How many Bits makes one Byte?",
+            "title": "How many Bits make one Byte?",
             "image": "",
             "options": [
                 "4 bits",
@@ -14,7 +14,7 @@
             ]
         },
         {
-            "title": "Who is called Father of Computer?",
+            "title": "Who is called the Father of Computer?",
             "image": "",
             "options": [
                 "Charles Babbage",
@@ -27,7 +27,7 @@
             ]
         },
         {
-            "title": "What does CPU stands for",
+            "title": "What does CPU stand for?",
             "image": "",
             "options": [
                 "Central Processing Unit",
