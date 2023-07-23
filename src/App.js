@@ -1,12 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import { Question } from './components/Questions/Question';
+import { LandingPage } from './components/Questions/LandingPage';
 
 function App() {
   return (
-
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <>
+    <LandingPage/>
+    </>
   );
 }
 
