@@ -23,7 +23,11 @@ export const Results = ({ questionsList }) => {
         let wrongAnswers = 0;
         questionsList.forEach((question) => {
             const correctSet = new Set(question.correctAnswers);
+            if(question.userAnswers.length === question.correctAnswers.length) {
             wrongAnswers += question.userAnswers.filter((answer) => !correctSet.has(answer)).length;
+            } else {
+                wrongAnswers++;
+            }
         });
         setwrongAnswersLength(wrongAnswers);
     }
