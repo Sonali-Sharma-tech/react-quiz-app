@@ -10,5 +10,5 @@ export const CardWrapper = (props) => {
 }
 export const CardWrapperBody = (props) => {
     const styles = useStyles();
-    return <div style={styles.cardWrapperBody}>{props.children}</div>
+    return <div style={{...styles.cardWrapperBody, ...props.style}}>{props.children}</div>
 }
