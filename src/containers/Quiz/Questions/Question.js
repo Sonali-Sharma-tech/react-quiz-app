@@ -16,6 +16,7 @@ const { Title } = Typography
 export const Question = ({ questionsList, handleShowResults }) => {
     const [currentStep, setCurrentStep] = useState(0);
     const [isMandatory, setIsMandatory] = useState(false);
+    const [questions, setQuestions] = useState([...questionsList])
 
     const handleNext = () => {
         if (currentStep === questionsList.length - 1) {
@@ -32,9 +33,11 @@ export const Question = ({ questionsList, handleShowResults }) => {
     }
 
     const addUserAnswers = (values) => {
+        console.log('values', values)
         if (values || values.length) {
             setIsMandatory(false)
             questionsList[currentStep]['userAnswers'] = Array.isArray(values) ? [...values] : [values];
+            setQuestions([...questionsList])
 
         }
     }
