@@ -33,7 +33,6 @@ export const Question = ({ questionsList, handleShowResults }) => {
     }
 
     const addUserAnswers = (values) => {
-        console.log('values', values)
         if (values || values.length) {
             setIsMandatory(false)
             questionsList[currentStep]['userAnswers'] = Array.isArray(values) ? [...values] : [values];
