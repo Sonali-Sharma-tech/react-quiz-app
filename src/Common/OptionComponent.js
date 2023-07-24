@@ -1,15 +1,25 @@
-import React, { useState} from 'react'
-import { Checkbox } from 'antd'
+import React, { useEffect, useState } from 'react'
+import { Checkbox, Radio } from 'antd'
 
-export const OptionComponent = ({value, addUserAnswers}) => {
+export const OptionComponent = ({ options, addUserAnswers, multiselect }) => {
     const [isOptionSelected, setIsOptionSelected] = useState(false);
 
-    const addAnswers = (e) => {
-        addUserAnswers(e.target.checked, value);
-        setIsOptionSelected(e.target.checked)
+    const addAnswers = (value) => {
+        console.log(value)
+        addUserAnswers(value);
+        // setIsOptionSelected()
     }
-    return <div  className={isOptionSelected ? "selected-option-class" : "option-class"}>
-        <Checkbox style={{color: "green"}} key={`${value}`} value={value} onChange={(e) => addAnswers(e)}>{value}
-        </Checkbox>
-    </div>
+    return <>
+            {multiselect ? <>
+                <Checkbox.Group  style={{width: "100%"}} onChange={addAnswers}>
+                {options.length && options.map(option => <div className={isOptionSelected ? "selected-option-class" : "option-class"}><Checkbox value={option}>{option}</Checkbox></div>)}
+
+
+            </Checkbox.Group>
+            </> : <Radio.Group style={{width: "100%"}} onChange={(e) => addAnswers(e.target.value)}>
+                {options.length && options.map(option => <div className={isOptionSelected ? "selected-option-class" : "option-class"}><Radio value={option}>{option}</Radio></div>)}
+
+
+            </Radio.Group>}
+    </>
 }

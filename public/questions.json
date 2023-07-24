@@ -11,7 +11,8 @@
             ],
             "correctAnswers": [
                 "8 bits"
-            ]
+            ],
+            "multiselect": false
         },
         {
             "title": "Who is called the Father of Computer?",
@@ -24,20 +25,22 @@
             ],
             "correctAnswers": [
                 "Charles Babbage"
-            ]
+            ],
+            "multiselect": false
         },
         {
-            "title": "What does CPU stand for?",
+            "title": "Which of the following statement is correct?",
             "image": "",
             "options": [
-                "Central Processing Unit",
-                "Control Processing Unit",
-                "Computer Processing Unit",
-                "Computer Programming Unit"
+                "1 KB = 1024 bytes",
+                "1 MB=2048 bytes",
+                "1 MB = 1024 KB",
+                "1 KB = 1000 bytes"
             ],
             "correctAnswers": [
                 "Central Processing Unit"
-            ]
+            ],
+            "multiselect": true
         }
     ]
 }
