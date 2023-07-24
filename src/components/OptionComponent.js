@@ -11,7 +11,7 @@ export const OptionComponent = ({ options, addUserAnswers, multiselect }) => {
     return <>
             {multiselect ? <>
                 <Checkbox.Group  style={{width: "100%"}} onChange={addAnswers}>
-                {options.length && options.map(option => <div className={isOptionSelected ? "selected-option-class" : "option-class"}><Checkbox value={option}>{option}</Checkbox></div>)}
+                {options.length && options.map(option => <div style={{width: "100%"}} className={isOptionSelected ? "selected-option-class" : "option-class"}><Checkbox  value={option}>{option}</Checkbox></div>)}
 
 
             </Checkbox.Group>

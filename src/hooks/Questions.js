@@ -10,6 +10,7 @@ export const useQuestionaire = (startQuiz) => {
     }
   }, [startQuiz])
 
+  // simulating a rest api call
   const fetchAllQuestions = async () => {
     fetch('questions.json')
       .then(response => {

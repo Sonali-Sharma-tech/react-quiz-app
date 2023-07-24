@@ -1,7 +1,7 @@
 import React from "react"
 import './App.css';
 
-import Quiz from "./components/Quiz/Quiz";
+import Quiz from "./containers/Quiz/Quiz";
 
 function App() {
   return <Quiz/>

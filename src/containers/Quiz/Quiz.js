@@ -1,6 +1,6 @@
 import React, { useState } from "react"
-import { Question } from '../Quiz/Questions/Question';
-import { LandingPage } from '../Quiz/Questions/LandingPage';
+import { Question } from './Questions/Question';
+import { LandingPage } from './Questions/LandingPage';
 import { useQuestionaire } from '../../hooks/Questions';
 import { Results } from "./Questions/Results";
 
