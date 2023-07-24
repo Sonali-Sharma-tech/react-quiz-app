@@ -33,13 +33,11 @@
             "image": "",
             "options": [
                 "1 KB = 1024 bytes",
-                "1 MB=2048 bytes",
+                "1 MB = 2048 bytes",
                 "1 MB = 1024 KB",
                 "1 KB = 1000 bytes"
             ],
-            "correctAnswers": [
-                "Central Processing Unit"
-            ],
+            "correctAnswers": ["1 MB = 1024 KB", "1 KB = 1024 bytes"],
             "multiselect": true
         }
     ]

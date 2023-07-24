@@ -5,7 +5,6 @@ export const OptionComponent = ({ options, addUserAnswers, multiselect }) => {
     const [isOptionSelected, setIsOptionSelected] = useState(false);
 
     const addAnswers = (value) => {
-        console.log(value)
         addUserAnswers(value);
         // setIsOptionSelected()
     }

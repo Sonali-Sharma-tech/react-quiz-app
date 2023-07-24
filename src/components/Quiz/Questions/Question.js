@@ -19,7 +19,6 @@ export const Question = ({ questionsList, handleShowResults }) => {
     const [isMandatory, setIsMandatory] = useState(false);
 
     const handleNext = () => {
-
         if (currentStep === questionsList.length - 1) {
             handleShowResults();
         } else {
@@ -31,7 +30,6 @@ export const Question = ({ questionsList, handleShowResults }) => {
                 setIsMandatory(true)
             }
         }
-
     }
 
     const addUserAnswers = (values) => {
@@ -40,7 +38,6 @@ export const Question = ({ questionsList, handleShowResults }) => {
             questionsList[currentStep]['userAnswers'] = Array.isArray(values) ? [...values] : [values];
 
         }
-        console.log('questionsList', questionsList);
     }
 
     return <>
