@@ -1,13 +1,10 @@
 import React from "react"
-import { Card, Col, Row, Typography, Button } from "antd"
+import { Card, Typography } from "antd"
 import { CardWrapper, CardWrapperBody } from "../../../components/CardWrapper"
-import { LoginOutlined } from "@ant-design/icons"
 import { Footer } from "../../../components/Footer"
 import { Layout } from "../../../components/Layout"
 import { useLandingPageStyles } from "../../../styles/LandingPageStyles"
-import { useStyles } from "../../../styles/Styles"
 
-// import "./../../../styles/LandingPage.css"
 
 const { Title } = Typography
 

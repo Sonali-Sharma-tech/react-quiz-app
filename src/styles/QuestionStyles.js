@@ -1,24 +1,20 @@
 export const useQuestionStyles = () => {
-   
-    const logo = {
+
+    const questionCard = {
+        borderRadius: "10px",
         display: "flex",
-        justifyContent: "flex-start",
-        alignItems: "center",
+        justifyContent: "space-between",
         flexDirection: "column",
-    }
-    const landingContent = {
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
+        margin: "auto -15px",
+        height: "70%"
     }
 
-    const quizCircleCard = {
-        height: "150px",
-        width: "150px",
-        borderRadius: "50%"
+    const questionTitle = {
+        marginTop: 20
     }
-    const quizCircleTitle = { color: "red", display: "flex", justifyContent: "center", fontWeight: 700 }
+
+    const mandatoryMessage = { color: "red" }
     return {
-         logo, landingContent,quizCircleCard, quizCircleTitle
+        questionCard, questionTitle, mandatoryMessage
     }
 }
