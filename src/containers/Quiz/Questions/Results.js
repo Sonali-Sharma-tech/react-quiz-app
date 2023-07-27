@@ -16,7 +16,7 @@ export const Results = ({ questionsList }) => {
 
     useEffect(() => {
         findResult();
-    }, [])
+    }, [questionsList])
 
 
     const findResult = () => {

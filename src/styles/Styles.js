@@ -1,9 +1,7 @@
 export const useStyles = () => {
     // custom card wrapper
     const cardWrapper = {
-    background: "rgb(254,254,254)",
      background: "linear-gradient(315deg, rgb(254, 254, 254) 17%, rgb(193, 136, 237) 90%)",
-     
     }
     
     // custom card wrapper body

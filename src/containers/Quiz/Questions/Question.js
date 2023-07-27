@@ -11,7 +11,6 @@ import { Footer } from "../../../components/Footer";
 import { Layout } from "../../../components/Layout";
 import { QuestionCard } from "./QuestionCard";
 
-const { Title } = Typography
 
 export const Question = ({ questionsList, handleShowResults }) => {
     const [currentStep, setCurrentStep] = useState(0);
@@ -45,8 +44,8 @@ export const Question = ({ questionsList, handleShowResults }) => {
         <Layout>
             <CardWrapper>
                 <CardWrapperBody>
-                    <ProgressBar questionListLength={questionsList.length} current={currentStep} />
-                    <QuestionCard currentStep={currentStep} questionsList={questionsList} addUserAnswers={addUserAnswers} isMandatory={isMandatory} />
+                    <ProgressBar questionListLength={questions.length} current={currentStep} />
+                    <QuestionCard currentStep={currentStep} questionsList={questions} addUserAnswers={addUserAnswers} isMandatory={isMandatory} />
                     <Footer actionLabel={"Next"} handleAction={handleNext} icon={<ArrowRightOutlined />} />
                 </CardWrapperBody>
             </CardWrapper>
