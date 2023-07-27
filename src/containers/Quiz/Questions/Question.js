@@ -1,6 +1,5 @@
 
 import React, { useState } from "react";
-import { Typography } from 'antd'
 import {
     ArrowRightOutlined
 } from '@ant-design/icons';
