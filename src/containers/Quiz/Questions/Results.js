@@ -7,7 +7,6 @@ import { Footer } from "../../../components/Footer"
 import { useResultStyles } from "../../../styles/ResultStyles"
 import { useStyles } from "../../../styles/Styles"
 
-const { Title } = Typography
 
 export const Results = ({ questionsList }) => {
     const [wrongAnswersLength, setwrongAnswersLength] = useState(0);
@@ -16,7 +15,7 @@ export const Results = ({ questionsList }) => {
 
     useEffect(() => {
         findResult();
-    }, [questionsList])
+    })
 
 
     const findResult = () => {
@@ -39,7 +38,7 @@ export const Results = ({ questionsList }) => {
         <Layout>
             <CardWrapper>
                 <CardWrapperBody>
-                    <Title level={2} style={styles.resultTitle}>Your Result</Title>
+                    <Typography.Title level={2} style={styles.resultTitle}>Your Result</Typography.Title>
                     <Space direction="vertical" style={commonStyles.fullWidth}>
                         <Alert message={`${questionsList.length - wrongAnswersLength} Correct Answers`} type="success" showIcon />
                         <Alert message={`${wrongAnswersLength} Wrong Answers`} type="error" showIcon />
